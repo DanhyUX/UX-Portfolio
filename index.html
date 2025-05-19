@@ -3,6 +3,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <title>Danilo Nunez UX/UI Designer</title>
 </head>
 <body>
@@ -23,14 +25,14 @@
 <div class="nav-right" style="display: flex; align-items: center; gap: 30px;">
     <button class="prm-btn" style="border-radius: 10px; display: flex; align-items: center;  cursor: pointer;"> <img src="./icons/material-symbols_download.svg" alt="download" style="margin-right: 10px;">Resumen</button>
 
-<div class="switch" style="cursor: pointer;"><img src="./icons/moon.svg" alt="moon"></div>
+<div class="dark-toggle-btn" onclick="toggleDarkMode()" style="cursor: pointer;" ><i class="fas fa-moon"></i>
 </div>
     </nav>
 
 <div class="hero">
     <div class="hero-text">
         <p class="chip">UX/UI Designer</p>
-      <div class="title"><img src="./icons/Hi, I’m Danilo..svg" alt="hero" class="hero-text"></div>
+      <div class="title"><span class="hero-title">Hi, I'm</span><img src="./icons/Danilo.svg" alt="hero" class="hero-text"></div>
         <p class="hero-subt">UX/UI Designer passionate about creating beautiful, functional, and user-centered digital experiences.
         </p>
         <button class="prm-btn-hero" style="border: 50px;">View my Work</button>
@@ -124,9 +126,9 @@
                 <div class="chip-exp">Sketch</div>
             </div>
         </div>
-        <span class="toggle-btn" onclick="toggleMostrarMas('extra1', this)">Mostrar más</span>
+        
     </div>
-
+    <span class="toggle-btn" style="margin-left: 200px;" onclick="toggleMostrarMas('extra1', this)">Mostrar más ↓</span>
     </div>
     <center><img src="./icons/Group 3.png" alt="" width="95%" class="exp-img"></center>
    </div>
@@ -203,7 +205,7 @@
           
         </div>
     </div>
-    <span class="toggle-btn" onclick="toggleMostrarMas('extra2', this)">Mostrar más</span>
+    <span class="toggle-btn" onclick="toggleMostrarMas('extra2', this)">Mostrar más ↓</span>
     </div>
 </div>
 
@@ -258,7 +260,7 @@
                             <p>Short description of the project.</p>
                             <button class="trc-btn" style="display: flex;align-items: center;">View Details <img src="./icons/arrow.svg" alt="" style="margin-left: 10px;"></button>
                 </div>
-                <span class="toggle-btn" onclick="toggleMostrarMas('extra3', this)">Mostrar más</span>
+                <span class="toggle-btn" onclick="toggleMostrarMas('extra3', this)">Mostrar más ↓</span>
             </div>
 
     </div>
@@ -280,21 +282,21 @@
         <img src="./icons/Frame 9.svg" alt="contact image" style="margin-right:24px;">
         <div class="text">
         <p>Email</p>
-        <p><strong style="color: black;">danhybnunez@hotmail.com</strong></p>
+        <p class="contact-subtext"><strong>danhybnunez@hotmail.com</strong></p>
     </div>
     </div>
     <div class="contact-img" style="display: flex;">
         <img src="./icons/Frame 32.svg" alt="contact image" style="margin-right:24px;">
         <div class="text">
             <p>LinkedIn</p>
-            <p><strong style="color: black;">www.linkedin.com/in/danilonunezux</strong></p>
+            <p class="contact-subtext"> <strong>www.linkedin.com/in/danilonunezux</strong></p>
         </div>
     </div>
     <div class="contact-img" style="display: flex;">
         <img src="./icons/Frame 9-1.svg" alt="contact image" style="margin-right:24px;">
         <div class="text">
             <p>GitHub</p>
-            <p><strong style="color: black;">www.github.com/DanhyUX</strong></p>
+            <p class="contact-subtext"><strong>www.github.com/DanhyUX</strong></p>
         </div>
     </div>
 </div>
@@ -319,10 +321,19 @@ function toggleMostrarMas(clase, boton) {
     const estaMostrando = !elementos[0].classList.contains('hidden');
 
     elementos.forEach(el => el.classList.toggle('hidden'));
-    boton.textContent = estaMostrando ? 'Mostrar más' : 'Mostrar menos';
+    boton.textContent = estaMostrando ? 'Mostrar más ↓' : 'Mostrar menos ↑';
   }
 
+  let modoOscuroActivo = false;
 
+  function toggleDarkMode() {
+  document.body.classList.toggle('dark-mode');
+
+  const btn = document.querySelector('.dark-toggle-btn');
+  const enModoOscuro = document.body.classList.contains('dark-mode');
+
+  btn.innerHTML = enModoOscuro ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+}
   </script>
 
 </body>

@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: background-color 0.3s, color 0.3s;
    
 }
 
@@ -177,7 +178,7 @@ font-size: small;
 }
 
 .card {
-    background-color: #fff;
+    border: #61616147 1px solid;
     border-radius: 20px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -187,7 +188,7 @@ font-size: small;
 }
 
 .card-cert {
-    background-color: #fff;
+   border: #61616147 1px solid;
     border-radius: 20px;
     padding: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -238,6 +239,38 @@ footer {
     margin-top: 50px;
 }
 
+ body.dark-mode {
+    background-color: #121212;
+    color: white;
+  }
+
+ 
+  body.dark-mode .toggle-dark-btn {
+    background-color: #333;
+    color: white;
+  }
+    body.dark-mode .contact-subtext {
+        color: #ffffff;
+    }
+
+    body.dark-mode .hero-title {
+        color: #ffffff;
+    }
+
+    .hero-title {
+        font-size: 5rem;
+        margin-top: 20px;
+        width: 100%;
+        text-align: center;
+    font-weight: 800;
+
+margin-right: 20PX;}
+
+.toggle-btn {
+   display: none;
+    
+  }
+
 @media (max-width: 768px) {
 
     .hidden {
@@ -260,9 +293,15 @@ footer {
        padding: 0px 70px;
 margin-top: 12px;
     }
+.hero-title {
+    font-size: 4rem;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+font-weight: 800;}
 
  .hero-text {
-    width: 115%;
+    width: 85%;
     justify-content: center;
   align-items: center;
     margin-top: 10px;}
@@ -398,8 +437,11 @@ nav {
 }
 
 .toggle-btn {
+    display: block;
     cursor: pointer;
     color: #8052F5;
-    text-decoration: underline;
+    
   }
 }
+
+
