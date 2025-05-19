@@ -211,7 +211,7 @@ footer {
     color:#7E7D7D ; 
     margin: 50px 0px;}
 
-    .experience-text {
+.experience-text {
         display: none;
     }
 
@@ -310,7 +310,7 @@ margin-top: 12px;
 }
 
 .card {
-    width:200px;
+    width:300px;
 height: 300px;
 
 }
@@ -326,6 +326,9 @@ height: 300px;
     display: flex;
    flex-wrap: wrap;
 }
+.card-cert {
+    height: 350px;
+}
 
 .contact-items {
     display: flex;
@@ -334,6 +337,14 @@ height: 300px;
     align-items: center;
     margin-top: 20px;
 }
+
+.card-certification   {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    }
+
  .hero-stats{
     width: 90%;
  }
@@ -363,17 +374,18 @@ nav {
 
 }
  .exp {
-    margin-bottom: 10px;
+    margin-bottom: 16px;
     font-size: 14px;
     height: 250px;
-    width: 200px;
+    width: 300px;
 
  }
+
 .chip-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+    gap: 10px;
 }
 }
