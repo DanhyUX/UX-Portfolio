@@ -211,6 +211,9 @@ footer {
     color:#7E7D7D ; 
     margin: 50px 0px;}
 
+    .experience-text {
+        display: none;
+    }
 
 .hero {
     display: flex; 
@@ -349,4 +352,28 @@ height: 300px;
 
 nav {
     padding: 10px 20px;}
+
+.exp-img {
+    display: none;
+}
+
+.experience-text {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+ .exp {
+    margin-bottom: 10px;
+    font-size: 14px;
+    height: 250px;
+    width: 200px;
+
+ }
+.chip-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
 }
