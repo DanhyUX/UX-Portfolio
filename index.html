@@ -80,7 +80,7 @@
     <h2>Professional Journey</h2>
     <div class="experience-text">
    <div class="card-experience">
-        <div class="card exp">
+        <div class="card exp ">
             <p class="date-exp">2025 - Present</p>
             <h3>Senior UX/UI Designer</h3>
             <p class="company-exp">Media Revolution</p>
@@ -102,7 +102,7 @@
                 <div class="chip-exp">Sketch</div>
             </div>
         </div>
-        <div class="card exp">
+        <div class="card exp extra1 hidden">
             <p class="date-exp">2023-2024</p>
             <h3>UX/UI Designer</h3>
             <p class="company-exp">Fripick/NewTech</p>
@@ -113,7 +113,7 @@
                 <div class="chip-exp">Sketch</div>
             </div>
         </div>
-        <div class="card exp">
+        <div class="card exp extra1 hidden">
             <p class="date-exp">2022-2023</p>
             <h3>Jr. UX/UI Designer</h3>
             <p class="company-exp">Media Revolution</p>
@@ -124,7 +124,7 @@
                 <div class="chip-exp">Sketch</div>
             </div>
         </div>
-    
+        <span class="toggle-btn" onclick="toggleMostrarMas('extra1', this)">Mostrar más</span>
     </div>
 
     </div>
@@ -136,6 +136,7 @@
         <p class="chip">Skills & Certifications</p>
         <h2>Expertise & Achievements</h2>
 <div class="card-container" style="display: flex; gap: 0px;">
+
         <div class="card-certification">
             <div class="card-cert">
                 <div class="cert-img"><img src="./IMG/Figma.png" alt="certification" style="width: 238px;"></div>
@@ -170,8 +171,8 @@
           
         </div>
 
-        <div class="card-certification">
-            <div class="card-cert">
+        <div class="card-certification ">
+            <div class="card-cert extra2 hidden" >
                 <div class="cert-img"><img src="./IMG/Motion.png" alt="certification" style="width: 238px;"></div>
                 <h3>Figma Motion & Animation</h3>
 <div class="cert-inside">
@@ -186,7 +187,7 @@
         </div>
 
         <div class="card-certification">
-            <div class="card-cert">
+            <div class="card-cert  extra2 hidden">
                 <div class="cert-img"><img src="./IMG/Web Dev.png" alt="certification" style="width: 238px;"></div>
                 <h3>Full Stack Web Developer</h3>
 <div class="cert-inside">
@@ -201,9 +202,8 @@
             </div>
           
         </div>
-        
-        
     </div>
+    <span class="toggle-btn" onclick="toggleMostrarMas('extra2', this)">Mostrar más</span>
     </div>
 </div>
 
@@ -235,7 +235,7 @@
                 <button class="trc-btn" style="display: flex;align-items: center;">View Details <img src="./icons/arrow.svg" alt="" style="margin-left: 10px;"></button>
                 </div>
 
-                <div class="card">
+                <div class="card extra3 hidden">
                     <div class="port-img"><img src="./IMG/Santa.png" alt="portfolio" style="margin-bottom: 35px;" class="port-img"></div>
                     <p class="chip">App Design</p>
                     <h3>Banco Santa Cruz</h3>
@@ -243,7 +243,7 @@
                     <button class="trc-btn" style="display: flex;align-items: center;">View Details <img src="./icons/arrow.svg" alt="" style="margin-left: 10px;"></button>
                 </div>
     
-                    <div class="card">
+                    <div class="card extra3 hidden">
                         <div class="port-img"><img src="./IMG/pet.png" alt="portfolio" style="margin-bottom: 35px;" class="port-img"></div>
                         <p class="chip">Web & App Design</p>
                         <h3>PetLand</h3>
@@ -251,13 +251,14 @@
                         <button class="trc-btn" style="display: flex;align-items: center;">View Details <img src="./icons/arrow.svg" alt="" style="margin-left: 10px;"></button>
                     </div>
     
-                        <div class="card hidden  invisible">
+                        <div class="card hidden invisible">
     
                             <div class="port-img"><img src="#" alt="portfolio"></div>
                             <h3>Project Name</h3>
                             <p>Short description of the project.</p>
                             <button class="trc-btn" style="display: flex;align-items: center;">View Details <img src="./icons/arrow.svg" alt="" style="margin-left: 10px;"></button>
                 </div>
+                <span class="toggle-btn" onclick="toggleMostrarMas('extra3', this)">Mostrar más</span>
             </div>
 
     </div>
@@ -310,5 +311,19 @@
     </div>
     <p>© 2025 Danilo. All rights reserved.</p>
 </footer>
+
+<script>
+
+function toggleMostrarMas(clase, boton) {
+    const elementos = document.querySelectorAll(`.${clase}`);
+    const estaMostrando = !elementos[0].classList.contains('hidden');
+
+    elementos.forEach(el => el.classList.toggle('hidden'));
+    boton.textContent = estaMostrando ? 'Mostrar más' : 'Mostrar menos';
+  }
+
+
+  </script>
+
 </body>
 </html>
