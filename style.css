@@ -18,6 +18,8 @@ nav {
 
 .nav-list {
     display: flex;
+    color: #B3B2B2;
+    font-size: 16px;
 }
 
 h1 {
@@ -111,10 +113,7 @@ p{
     cursor: pointer;
     font-weight:600 ;
 }
-.nav-list {
-    color: #B3B2B2;
-    font-size: 16px;
-}
+
 
 #hero-li {
     color: #8052F5;
@@ -139,8 +138,17 @@ li:hover {
    
 }
 
+.about-items {
+    display: flex;
+     justify-content: center; 
+     align-items: center; 
+     margin-left: 50px; 
+     margin-top: 50px;
+}
+
 .trc-btn{
 
+    
     border: none;
     color: #8052F5;
 
@@ -197,6 +205,12 @@ footer {
     height: 50px;
 }
 
+.hero-subt { width: 85%;
+    font-size: large;
+    color:#7E7D7D ; 
+    margin: 50px 0px;}
+
+
 .hero {
     display: flex; 
     justify-content: center; 
@@ -211,6 +225,13 @@ footer {
 }
 .port-img {
     width: 320px;
+}
+
+.contact-items {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 50px;
 }
 
 @media (max-width: 768px) {
@@ -230,13 +251,14 @@ footer {
         }
 
     .hero {
-       display: list-item;
-       justify-content: center;
-       align-items: center;
-       padding: 0px 100px;
+         display: flex;
+       flex-wrap: wrap;
+       padding: 0px 70px;
     }
 
  .hero-text {
+    width: 115%;
+    justify-content: center;
   align-items: center;
     margin-top: 20px;}
 
@@ -250,18 +272,23 @@ footer {
    .prm-scnd {
     display: none;
    }
+
 .about-me-img  {
-    width: 250px;
+    width: 300px;
+    margin-right: 20px;
 }
 
 .about-me-text {
-    width: 45%;
-margin-left: 55px;
+    width: 100%;
+    margin-top: 20px;
+    margin-right: 20px;
+
 }
 
     .about-text {
         font-size: 14px;
     }
+
 .card-container {
     display: flex;
     flex-wrap: wrap;
@@ -278,7 +305,8 @@ margin-left: 55px;
 }
 
 .card {
-    width:230px;
+    width:200px;
+height: 300px;
 
 }
 .port-img {
@@ -288,4 +316,35 @@ margin-left: 55px;
    .right-cont {
     font-size: 12px;
    }
+
+   .about-items {
+    display: flex;
+   flex-wrap: wrap;
+}
+
+.contact-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+ .hero-stats{
+    width: 90%;
+ }
+
+
+
+ .hero-img{
+    width: 150%;
+ }
+
+ .hero-subt { 
+    width: 120%;
+    font-size: large;
+    color:#7E7D7D ; 
+    margin: 50px 0px;}
+
+nav {
+    padding: 10px 20px;}
 }
