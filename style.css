@@ -58,6 +58,7 @@ p{
     color:8052F5;
     font-weight: 600;
 }
+
 .prm-btn {
     background-color: #8052F5; /* Green */
     border: none;
@@ -239,13 +240,13 @@ footer {
     margin-top: 50px;
 }
 
- body.dark-mode {
+body.dark-mode {
     background-color: #121212;
     color: white;
   }
 
  
-  body.dark-mode .toggle-dark-btn {
+body.dark-mode .toggle-dark-btn {
     background-color: #333;
     color: white;
   }
@@ -257,7 +258,7 @@ footer {
         color: #ffffff;
     }
 
-    .hero-title {
+.hero-title {
         font-size: 5rem;
         margin-top: 20px;
         width: 100%;
@@ -271,50 +272,67 @@ margin-right: 20PX;}
     
   }
 
+  .cert-photo {
+    width: 238px;
+    }
+
+  .right-cont {
+   
+    width: 50%;
+   }
+
+   .card-item {
+    display: flex; 
+    gap: 150px;
+   }
 @media (max-width: 768px) {
 
-    .hidden {
+.hidden {
      display: none;
     }
     
-    .logo {
+.logo {
         height: 40px;
        
     }
     
-    .prm-btn {
+.prm-btn {
             padding: 10px 20px;
             font-size: 14px;
         }
 
-    .hero {
+.hero {
          display: flex;
        flex-wrap: wrap;
        padding: 0px 70px;
 margin-top: 12px;
     }
-.hero-title {
-    font-size: 4rem;
-    margin-top: 20px;
-    width: 100%;
-    text-align: center;
-font-weight: 800;}
 
- .hero-text {
-    width: 85%;
-    justify-content: center;
-  align-items: center;
-    margin-top: 10px;}
+    .cert-photo {
+        width: 300px;
+        }
 
-    .icon-hero {
+.title {
+    width: 110%;
+}
+
+.icon-hero {
        display: none;
     }
-   .prm-btn-hero {
+
+.prm-btn-hero {
+    display: none;
+   }
+   .card-item {
+    display: flex; 
+    gap: 200px;
+   }
+.prm-scnd {
     display: none;
    }
 
-   .prm-scnd {
-    display: none;
+   h3 {
+    font-size: large;
    }
 
 .about-me-img  {
@@ -329,7 +347,7 @@ font-weight: 800;}
 
 }
 
-    .about-text {
+.about-text {
         font-size: 14px;
     }
 
@@ -357,16 +375,19 @@ height: 300px;
     width: 200px;
    }
 
-   .right-cont {
+.right-cont {
     font-size: 12px;
+    width: 60%;
    }
 
    .about-items {
     display: flex;
    flex-wrap: wrap;
 }
+
 .card-cert {
-    height: 350px;
+    height: 390px;
+    width: 300px;
 }
 
 .contact-items {
@@ -391,7 +412,7 @@ height: 300px;
 
 
  .hero-img{
-    width: 150%;
+    width: 120%;
  }
 
  .hero-subt { 
