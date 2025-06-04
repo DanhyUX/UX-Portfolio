@@ -304,7 +304,7 @@
 
 
 <footer style="display: flex; justify-content: space-between; padding: 20px;">
-    <img src="./IMG/Logo.png" alt="logo" class="logo">
+    <img src="./IMG/Logo.png" alt="logo" class="logo2" style="height: 40px;">
     <div class="icon-hero" style="display: flex; padding: 10px;">
         <div class="icon-hero" style="margin-right: 10px;"> <img src="./icons/devicon_linkedin.svg" alt="LinkedIn"></div>
         <div class="icon-hero" style="margin-right: 10px;"> <img src="./icons/uiw_github.svg" alt="GitHub"></div>
@@ -331,7 +331,12 @@ function toggleMostrarMas(clase, boton) {
   const btn = document.querySelector('.dark-toggle-btn');
   const enModoOscuro = document.body.classList.contains('dark-mode');
 
+  const Logo = document.querySelector('.logo');
+  const Logo2 = document.querySelector('.logo2');
+ 
   btn.innerHTML = enModoOscuro ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+  Logo.src = enModoOscuro ? "./IMG/Logo-white.png" : './IMG/Logo.png';
+  Logo2.src = enModoOscuro ? "./IMG/Logo-white.png" : './IMG/Logo.png';
 }
   </script>
 
